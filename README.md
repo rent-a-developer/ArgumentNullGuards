@@ -1,6 +1,6 @@
 [![NuGet Version](https://img.shields.io/nuget/v/RentADeveloper.ArgumentNullGuards)](https://www.nuget.org/packages/RentADeveloper.ArgumentNullGuards/)
 [![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE.md)
-![semver](https://img.shields.io/badge/semver-1.0.0-blue)
+![semver](https://img.shields.io/badge/semver-1.0.1-blue)
 
 # ![image icon](https://raw.githubusercontent.com/rent-a-developer/ArgumentNullGuards/main/icon32.png) ArgumentNullGuards
 
