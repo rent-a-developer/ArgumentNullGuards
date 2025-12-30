@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TieredCompilation>true</TieredCompilation>
+		<Authors>David Liebeherr</Authors>
+		<Company>rent-a-developer</Company>
+		<Copyright>Copyright © rent-a-developer / David Liebeherr</Copyright>
+		<RootNamespace>RentADeveloper.ArgumentNullGuards.UnitTests</RootNamespace>
+		<AssemblyTitle>rent-a-developer ArgumentNullGuards.UnitTests</AssemblyTitle>
+		<AssemblyName>RentADeveloper.ArgumentNullGuards.UnitTests</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<NoWarn>1701;1702</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="Xunit" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AwesomeAssertions" Version="9.3.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+		<PackageReference Include="PublicApiGenerator" Version="11.5.4" />
+		<PackageReference Include="Verify.XunitV3" Version="31.9.0" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="xunit.v3" Version="3.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\ArgumentNullGuards\ArgumentNullGuards.csproj" />
+	</ItemGroup>
+
+</Project>

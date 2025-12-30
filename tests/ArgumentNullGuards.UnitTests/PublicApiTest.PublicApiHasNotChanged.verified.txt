@@ -1,0 +1,19 @@
+﻿[assembly: System.Reflection.AssemblyMetadata("RepositoryUrl", "https://github.com/rent-a-developer/ArgumentNullGuards.git")]
+namespace RentADeveloper.ArgumentNullGuards
+{
+    public static class ArgumentNullGuardVerifier
+    {
+        public static void Verify(System.Linq.Expressions.LambdaExpression validCallExpression) { }
+    }
+}
+namespace RentADeveloper.ArgumentNullGuards.Exceptions
+{
+    public class ArgumentNullGuardException : System.Exception
+    {
+        public ArgumentNullGuardException(string message) { }
+    }
+    public class NoNullableEnabledContextException : System.Exception
+    {
+        public NoNullableEnabledContextException(string message) { }
+    }
+}
