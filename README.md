@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE.md)
 ![semver](https://img.shields.io/badge/semver-1.0.0-blue)
 
-# ![image icon](icon32.png) ArgumentNullGuards
+# ![image icon](https://raw.githubusercontent.com/rent-a-developer/ArgumentNullGuards/main/icon32.png) ArgumentNullGuards
 
 A simple .NET library that verifies constructors and methods have guards in place against null arguments.
 
