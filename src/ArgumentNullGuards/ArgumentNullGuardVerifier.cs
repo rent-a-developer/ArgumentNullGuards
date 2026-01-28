@@ -170,13 +170,6 @@ public static class ArgumentNullGuardVerifier
             return null;
         }
 
-        var defaultNullability = ReflectionHelper.GetDefaultNullability(constructorOrMethod);
-
-        if (defaultNullability is null)
-        {
-            ThrowHelper.ThrowNoNullableEnabledContextException(constructorOrMethod);
-        }
-
         var methodParameters = constructorOrMethod.GetParameters();
 
         var parameterIndexes = new Dictionary<String, Int32>();
@@ -192,7 +185,7 @@ public static class ArgumentNullGuardVerifier
         var nonNullableParameters = methodParameters
             .Where(parameter =>
                 !parameter.ParameterType.IsValueType &&
-                ReflectionHelper.GetNullability(parameter, defaultNullability.Value) == Nullability.NotNull
+                ReflectionHelper.GetNullability(parameter) is NullabilityState.NotNull or NullabilityState.Unknown
             )
             .ToArray();
 

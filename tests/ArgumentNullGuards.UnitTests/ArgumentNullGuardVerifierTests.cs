@@ -7,7 +7,8 @@ public class ArgumentNullGuardVerifierTests : TestsBase
     {
         Invoking(() =>
                 ArgumentNullGuardVerifier.Verify(() =>
-                    CorrectGuards.StaticAsyncIteratorMethod("A", null, 1, null, null, "A"))
+                    CorrectGuards.StaticAsyncIteratorMethod("A", null, 1, null, null, "A")
+                )
             )
             .Should().NotThrow();
 
@@ -18,7 +19,8 @@ public class ArgumentNullGuardVerifierTests : TestsBase
 
         Invoking(() =>
                 ArgumentNullGuardVerifier.Verify(() =>
-                    CorrectGuards.StaticIteratorMethod("A", null, 1, null, null, "A"))
+                    CorrectGuards.StaticIteratorMethod("A", null, 1, null, null, "A")
+                )
             )
             .Should().NotThrow();
 
@@ -66,7 +68,8 @@ public class ArgumentNullGuardVerifierTests : TestsBase
     {
         Invoking(() =>
                 ArgumentNullGuardVerifier.Verify(() =>
-                    MissingGuards.StaticAsyncIteratorMethod("A", null, 1, null, null, "A"))
+                    MissingGuards.StaticAsyncIteratorMethod("A", null, 1, null, null, "A")
+                )
             )
             .Should().Throw<ArgumentNullGuardException>()
             .WithMessage(
@@ -99,7 +102,8 @@ public class ArgumentNullGuardVerifierTests : TestsBase
 
         Invoking(() =>
                 ArgumentNullGuardVerifier.Verify(() =>
-                    MissingGuards.StaticIteratorMethod("A", null, 1, null, null, "A"))
+                    MissingGuards.StaticIteratorMethod("A", null, 1, null, null, "A")
+                )
             )
             .Should().Throw<ArgumentNullGuardException>()
             .WithMessage(
@@ -387,49 +391,49 @@ public class ArgumentNullGuardVerifierTests : TestsBase
     }
 
     [Fact]
-    public void Verify_TypeIsNotInNullableEnabledContext_ShouldThrow()
+    public void Verify_TypeIsNotInNullableEnabledContext_ShouldAssumeReferenceTypeParametersAreNonNullable()
     {
         Invoking(() => ArgumentNullGuardVerifier.Verify(() => NotInNullableEnabledContext.StaticMethod("A")))
-            .Should().Throw<NoNullableEnabledContextException>()
+            .Should().Throw<ArgumentNullGuardException>()
             .WithMessage(
                 $"""
-                 Can't check the following method for Null Argument Guards:
+                 The Null Argument Guard for the following method parameter is missing:
 
                  Type: {typeof(NotInNullableEnabledContext)}
                  Method: Void StaticMethod(System.Object)
+                 Parameter: parameter
 
-                 The type and/or the method is not in a nullable enabled context.
-
+                 The method did not throw an System.ArgumentNullException when called with a null argument for the parameter.
                  """
             );
 
         Invoking(() => ArgumentNullGuardVerifier.Verify(() => new NotInNullableEnabledContext("A")))
-            .Should().Throw<NoNullableEnabledContextException>()
+            .Should().Throw<ArgumentNullGuardException>()
             .WithMessage(
                 $"""
-                 Can't check the following method for Null Argument Guards:
+                 The Null Argument Guard for the following method parameter is missing:
 
                  Type: {typeof(NotInNullableEnabledContext)}
                  Method: Void .ctor(System.Object)
+                 Parameter: parameter
 
-                 The type and/or the method is not in a nullable enabled context.
-
+                 The method did not throw an System.ArgumentNullException when called with a null argument for the parameter.
                  """
             );
 
         var instance = new NotInNullableEnabledContext("A");
 
         Invoking(() => ArgumentNullGuardVerifier.Verify(() => instance.Method("A")))
-            .Should().Throw<NoNullableEnabledContextException>()
+            .Should().Throw<ArgumentNullGuardException>()
             .WithMessage(
                 $"""
-                 Can't check the following method for Null Argument Guards:
+                 The Null Argument Guard for the following method parameter is missing:
 
                  Type: {typeof(NotInNullableEnabledContext)}
                  Method: Void Method(System.Object)
+                 Parameter: parameter
 
-                 The type and/or the method is not in a nullable enabled context.
-
+                 The method did not throw an System.ArgumentNullException when called with a null argument for the parameter.
                  """
             );
     }

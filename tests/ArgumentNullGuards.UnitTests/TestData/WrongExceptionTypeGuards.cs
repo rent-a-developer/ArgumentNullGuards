@@ -1,7 +1,6 @@
 ﻿namespace RentADeveloper.ArgumentNullGuards.UnitTests.TestData;
 
 // ReSharper disable ParameterOnlyUsedForPreconditionCheck.Local
-
 public class WrongExceptionTypeGuards
 {
     public WrongExceptionTypeGuards()

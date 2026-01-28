@@ -1,7 +1,6 @@
 ﻿namespace RentADeveloper.ArgumentNullGuards.UnitTests.TestData;
 
 // ReSharper disable UnusedParameter.Local
-
 public class CorrectGuards
 {
     public CorrectGuards()

@@ -17,20 +17,6 @@ internal static class ThrowHelper
         );
 
     [DoesNotReturn]
-    internal static void ThrowNoNullableEnabledContextException(MethodBase method) =>
-        throw new NoNullableEnabledContextException(
-            $"""
-             Can't check the following method for Null Argument Guards:
-
-             Type: {method.DeclaringType}
-             Method: {method}
-
-             The type and/or the method is not in a nullable enabled context.
-
-             """
-        );
-
-    [DoesNotReturn]
     internal static void ThrowNullArgumentGuardMissingException(MethodBase method, String parameterName) =>
         throw new ArgumentNullGuardException(
             $"""

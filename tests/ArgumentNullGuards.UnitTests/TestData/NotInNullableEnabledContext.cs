@@ -3,7 +3,6 @@
 namespace RentADeveloper.ArgumentNullGuards.UnitTests.TestData;
 
 // ReSharper disable UnusedParameter.Local
-
 public class NotInNullableEnabledContext
 {
     public NotInNullableEnabledContext(Object parameter)

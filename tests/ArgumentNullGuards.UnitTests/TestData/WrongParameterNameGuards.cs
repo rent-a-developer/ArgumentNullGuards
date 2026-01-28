@@ -2,7 +2,6 @@
 
 // ReSharper disable ParameterOnlyUsedForPreconditionCheck.Local
 // ReSharper disable NotResolvedInText
-
 public class WrongParameterNameGuards
 {
     public WrongParameterNameGuards()

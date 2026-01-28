@@ -12,8 +12,4 @@ namespace RentADeveloper.ArgumentNullGuards.Exceptions
     {
         public ArgumentNullGuardException(string message) { }
     }
-    public class NoNullableEnabledContextException : System.Exception
-    {
-        public NoNullableEnabledContextException(string message) { }
-    }
 }

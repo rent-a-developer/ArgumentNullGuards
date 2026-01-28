@@ -21,8 +21,8 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<Version>1.0.1</Version>
-		<PackageReleaseNotes>Fixed icon URL in README.md.</PackageReleaseNotes>
+		<Version>1.1.0</Version>
+		<PackageReleaseNotes>Switched to NullabilityInfoContext to determine nullability of parameters.</PackageReleaseNotes>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>

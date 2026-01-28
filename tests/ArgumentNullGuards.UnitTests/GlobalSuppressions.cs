@@ -5,5 +5,21 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:RentADeveloper.ArgumentNullGuards.UnitTests.TestData.WrongParameterNameGuards.AsyncIteratorMethod(System.Object)~System.Collections.Generic.IAsyncEnumerable{System.Int32}")]
-[assembly: SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "<Pending>", Scope = "member", Target = "~M:RentADeveloper.ArgumentNullGuards.UnitTests.TestData.WrongParameterNameGuards.AsyncMethod(System.Object)~System.Threading.Tasks.Task")]
+[assembly:
+    SuppressMessage(
+        "Performance",
+        "CA1822:Mark members as static",
+        Justification = "<Pending>",
+        Scope = "member",
+        Target =
+            "~M:RentADeveloper.ArgumentNullGuards.UnitTests.TestData.WrongParameterNameGuards.AsyncIteratorMethod(System.Object)~System.Collections.Generic.IAsyncEnumerable{System.Int32}"
+    )]
+[assembly:
+    SuppressMessage(
+        "Performance",
+        "CA1822:Mark members as static",
+        Justification = "<Pending>",
+        Scope = "member",
+        Target =
+            "~M:RentADeveloper.ArgumentNullGuards.UnitTests.TestData.WrongParameterNameGuards.AsyncMethod(System.Object)~System.Threading.Tasks.Task"
+    )]
