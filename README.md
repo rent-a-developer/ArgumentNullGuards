@@ -1,7 +1,7 @@
 [![NuGet Version](https://img.shields.io/nuget/v/RentADeveloper.ArgumentNullGuards)](https://www.nuget.org/packages/RentADeveloper.ArgumentNullGuards/)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rent-a-developer_ArgumentNullGuards&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rent-a-developer_ArgumentNullGuards)
 [![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE.md)
-![semver](https://img.shields.io/badge/semver-1.0.1-blue)
+![semver](https://img.shields.io/badge/semver-1.1.0-blue)
 
 # ![image icon](https://raw.githubusercontent.com/rent-a-developer/ArgumentNullGuards/main/icon32.png) ArgumentNullGuards
 
