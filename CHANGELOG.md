@@ -10,7 +10,7 @@ this project adheres to [Semantic Versioning](http://semver.org/).
 - **BREAKING:** The NuGet package has been renamed:
 	- RentADeveloper.ArgumentNullGuards > ArgumentNullGuards
 
-### Migration from 2.x
+### Migration from 1.x
 
 1. Remove the 'RentADeveloper.ArgumentNullGuards' package and add the 'ArgumentNullGuards' package.
 
