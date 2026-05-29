@@ -1,7 +1,7 @@
-[![NuGet Version](https://img.shields.io/nuget/v/RentADeveloper.ArgumentNullGuards)](https://www.nuget.org/packages/RentADeveloper.ArgumentNullGuards/)
+[![NuGet Version](https://img.shields.io/nuget/v/ArgumentNullGuards)](https://www.nuget.org/packages/ArgumentNullGuards/)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rent-a-developer_ArgumentNullGuards&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=rent-a-developer_ArgumentNullGuards)
 [![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE.md)
-![semver](https://img.shields.io/badge/semver-1.1.0-blue)
+![semver](https://img.shields.io/badge/semver-2.0.0-blue)
 
 # ![image icon](https://raw.githubusercontent.com/rent-a-developer/ArgumentNullGuards/main/icon32.png) ArgumentNullGuards
 
@@ -23,10 +23,10 @@ Inspired by a brilliant idea from Thomas Levesque, see https://thomaslevesque.co
 ## Installation
 First, [install NuGet](http://docs.nuget.org/docs/start-here/installing-nuget).
 
-Then install the [NuGet package](https://www.nuget.org/packages/RentADeveloper.ArgumentNullGuards/) from the package
+Then install the [NuGet package](https://www.nuget.org/packages/ArgumentNullGuards/) from the package
 manager console:
 ~~~shell
-PM> Install-Package RentADeveloper.ArgumentNullGuards
+PM> Install-Package ArgumentNullGuards
 ~~~
 
 ## Quick start

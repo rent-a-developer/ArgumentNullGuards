@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and
 this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2026-05-29
+
+### Changed
+- **BREAKING:** The NuGet package has been renamed:
+	- RentADeveloper.ArgumentNullGuards > ArgumentNullGuards
+
+### Migration from 2.x
+
+1. Remove the 'RentADeveloper.ArgumentNullGuards' package and add the 'ArgumentNullGuards' package.
+
 ## [1.1.0] - 2026-01-28
 
 ### Changed
